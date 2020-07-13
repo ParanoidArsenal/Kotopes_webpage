@@ -1,0 +1,39 @@
+.containerAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 1s;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.containerIcons{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    margin: 0px 15px;
+}
+
+.containerIconStatic{
+    position: relative;
+    max-width:70px;
+    margin: 0px 7px;
+    /* transition: transform 0.4s, opacity 0.4s, filter 0.4s; */
+}
+
+
+.containerAboutOuterBodyText{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+    margin: 5px 0px;
+}
+
+.containerAboutInnerBodyText{
+    display:flex;
+    max-width: 70%;
+    flex-direction: column;
+    text-align: center;
+}

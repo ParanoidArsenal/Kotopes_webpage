@@ -2,7 +2,6 @@ import React,  { useState, useRef } from 'react';
 import './Thumbnail.css';
 // import ReactMediumImg from 'react-medium-zoom';
 import {MediumZoomImage} from '../../MediumZoomImage/MediumZoomImage';
-import ReactMediumZoom from '../../MediumZoomImage/MediumZoomImage';
 
 
 
@@ -67,30 +66,6 @@ import ReactMediumZoom from '../../MediumZoomImage/MediumZoomImage';
 
 // };
 
-// const Thumbnail = ({src, alt}) =>{
-//     const [modalMode, setModalMode] = useState(false);
-//     if(!modalMode){
-//         return (
-//         <img className = "thumbnail" alt={alt} src={src} onClick={event => setModalMode(!modalMode)}/>
-//     )}
-//     else{
-//         return (
-//             <>
-//             <div className = "modalWindow">
-//                 <img className = "modalThumbnail" alt={alt} src={src} onClick={event => setModalMode(!modalMode)}/>
-//             </div>
-//             <img className = "thumbnail opacity-0" alt={alt} src={src}/>
-//             </>
-//         )
-//     }
-// };
-
-// const Thumbnail = ({src, alt}) =>{
-//         return (
-//         <img className = "thumbnail" alt={alt} src={src}/>
-//     );
-// };
-
 const Thumbnail = ({src, alt}) =>{
         return (
         <MediumZoomImage src={src} alt={alt} className = "thumbnail" onOpen={() => console.log('Image Open')}
@@ -99,11 +74,5 @@ const Thumbnail = ({src, alt}) =>{
     );
 };
 
-// const Thumbnail = ({src, alt}) =>{
-//   return (
-//   <MediumZoomImage src={src} alt={alt} className = "thumbnail" />
-//   // {/* <img className = "thumbnail" alt={alt} src={src}/> */}
-// );
-// };
 
 export {Thumbnail};

@@ -1,0 +1,135 @@
+/* .modalWindow{
+    display: flex;
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.658);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    overflow:visible;
+} */
+
+.hidden{
+    display: none !important;
+}
+
+.to-center{
+   /* position: absolute; */
+  position: fixed; 
+  z-index: 5;
+}
+
+/* left: 50%; */
+  /* top: 50%; */
+ 
+  /* transform: translate(-50%, -50%); */
+
+.modalWindow{
+    display: flex;
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.658);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    /* overflow:visible; */
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modalThumbnail{
+    display: flex;
+    padding: 5px;
+    /* position:fixed; */
+    /* width:max-content;
+    height: max-content; */
+    object-fit: scale-down;
+    /* max-width: 60%; */
+    max-height:95%;
+    /* transform:scale(1.5); */
+    height: auto;
+}
+
+
+
+.thumbnail{
+    /* display: flex; */
+    flex:auto;
+    display: flex;
+    padding: 5px;
+    max-width: calc(100% / 3);
+    margin: 0 5px;
+    min-width: 150px;
+    height: auto;
+    object-fit: scale-down;
+    /* transition: all 3s; */
+    transition: top 2s, left 2s, transform 2s;
+    object-position: top;
+
+}
+
+@media screen and (min-width: 992px) {
+.thumbnail{
+    max-width: 32%;
+    min-width: 150px;
+    height: auto;
+}
+}
+
+@media screen and (min-width: 822px) and (max-width: 991px) {
+    .thumbnail{
+        max-width: 49%;
+        min-width: 100px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 690px) and (max-width: 821px) {
+    .thumbnail{
+        max-width:  48%;
+        min-width: 100px;
+        height: auto;
+    }
+    
+
+}
+
+@media screen and (max-width: 689px) {
+    .thumbnail{
+        max-width: 96%;
+        min-width: 100px;
+        height: auto;
+    }
+    
+
+}
+
+/* .thumbnail:hover{
+    transform:scale(1.1);
+} */
+
+.zoom-hover:hover{
+    transform:scale(1.1);
+}
+
+.opacity-0{
+    opacity: 0 !important;
+}
+
+.frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: white;
+    transform: translateZ(0);
+  }

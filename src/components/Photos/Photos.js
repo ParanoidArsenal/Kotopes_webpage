@@ -9,13 +9,29 @@ import pic_6 from '../../pictures/photos/6_pic.jpg';
 import pic_7 from '../../pictures/photos/7_pic.jpg';
 import pic_8 from '../../pictures/photos/8_pic.jpg';
 import pic_9 from '../../pictures/photos/9_pic.jpg';
+import {Thumbnail} from './Thumbnail/Thumbnail'; 
 
-
+import './Thumbnail/Thumbnail.css';
 const Photos = () =>{
     return (
         <div className = "containerOuterPhotos">
             <div className = "containerInnerPhotos">
-                <img className = "thumbnail" alt="picture 1" src={pic_1}/>
+            
+                {/* <ImageZoom>
+                    <img className = "thumbnail" alt="picture 1" src={pic_2} />
+                </ImageZoom> */}
+                {/* <ZoomImg src={pic_1}/> */}
+                {/* <ReactMediumImg src={pic_1} alt="picture 1" className = "thumbnail" /> */}
+                <Thumbnail src={pic_1} alt="picture 1" />
+                <Thumbnail src={pic_2} alt="picture 2" />
+                <Thumbnail src={pic_3} alt="picture 3" />
+                <Thumbnail src={pic_4} alt="picture 4" />
+                <Thumbnail src={pic_5} alt="picture 5" />
+                <Thumbnail src={pic_6} alt="picture 6" />
+                <Thumbnail src={pic_7} alt="picture 7" />
+                <Thumbnail src={pic_8} alt="picture 8" />
+                <Thumbnail src={pic_9} alt="picture 9" />
+                {/* <img className = "thumbnail" alt="picture 1" src={pic_1}/>
                 <img className = "thumbnail" alt="picture 2" src={pic_2}/>
                 <img className = "thumbnail" alt="picture 3" src={pic_3}/>
                 <img className = "thumbnail" alt="picture 4" src={pic_4}/>
@@ -23,7 +39,7 @@ const Photos = () =>{
                 <img className = "thumbnail" alt="picture 6" src={pic_6}/>
                 <img className = "thumbnail" alt="picture 7" src={pic_7}/>
                 <img className = "thumbnail" alt="picture 8" src={pic_8}/>
-                <img className = "thumbnail" alt="picture 9" src={pic_9}/>
+                <img className = "thumbnail" alt="picture 9" src={pic_9}/> */}
             </div>
         </div> 
     );

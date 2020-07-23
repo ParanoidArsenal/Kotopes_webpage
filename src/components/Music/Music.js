@@ -6,7 +6,7 @@ import song_4 from '../../music/4_luckyfive.wav';
 
 const Music = () =>{
     return (
-        <div className = "containerMusic">
+        <div className = "container containerMusic">
             <audio controls>
                 <source src={song_1} type="audio/mpeg"/>
             </audio>

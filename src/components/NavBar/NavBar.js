@@ -6,49 +6,32 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import './NavBar.css';
 
 import logo from '../../pictures/kotopes_logo2.png';
+import cartIcon from '../../pictures/icons/shopping-cart-hand-drawn-tool.svg';
 
 const NavBar = () =>{
     return (
-        // <div className = "topHomeLink">
-        //     <Link to='/'>Home</Link>
-        // </div>
-
-//         <div className = "container">
-//         <nav className = "navbar navbar-expand-lg navbar-dark bg-primary">
-
-//             <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-//     <span className="navbar-toggler-icon"></span>
-//   </button>
-            
-//             <div className = "collapse navbar-collapse" id="navbarColor01">
-//             <ul className = "navbar-nav mr-auto">
-//                 <li className = "nav-item"><NavLink className = "nav-link" to='/about'>About</NavLink></li>
-//                 <li className = "nav-item"><NavLink className = "nav-link" to='/music'>Music</NavLink></li>
-//                 <li className = "nav-item"><NavLink className = "nav-link" to='/video'>Video</NavLink></li>
-//                 <li className = "nav-item"><NavLink className = "nav-link" to='/tour'>Tour</NavLink></li>
-//                 <li className = "nav-item"><NavLink className = "nav-link" to='/merch'>Merch</NavLink></li>
-//                 <li className = "nav-item"><NavLink className = "nav-link" to='/contact'>Contact</NavLink></li>
-//             </ul>
-//             <form className="form-inline my-2 my-lg-0">
-//             <input className="form-control mr-sm-2" type="text" placeholder="Search"/>
-//             <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-//             </form>
-            
-//             </div>
-//         </nav>
-//         </div>
-
     // <div className = "topHomeLink">
     <>
+    <div className = "navHeaderContainer">
+    <div className = "shopping-cart-icon-container">
+      <RRNavLink to="/shopping-cart">
+          <div className = "shopping-cart-icon">
+            <img alt="shopping-cart-link" src = {cartIcon} />
+          </div>
+      </RRNavLink>
+      </div>
     <div className = "logoOuterContainer">
-      <div className = "logoInnerContainer">
-        <img src = {logo} />
+      <RRNavLink to="/about">
+          <div className = "logoInnerContainer">
+            <img src = {logo} />
+          </div>
+      </RRNavLink>
       </div>
     </div>
     <div className = "container customNavBar">
       <Nav className='bg-white text-white border-primary' justified = {true} pills fill  tabs>
         <NavItem >
-          <NavLink className='link-1 text-dark' tag={RRNavLink} exact to="/about">About</NavLink>
+          <NavLink className='link-1 text-primary' tag={RRNavLink} exact to="/about">About</NavLink>
         </NavItem>
         <NavItem>
           <NavLink className='link-2 text-primary' tag={RRNavLink} exact to="/music">Music</NavLink>

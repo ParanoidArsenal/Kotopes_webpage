@@ -7,7 +7,7 @@ import icon_dog from '../../pictures/icons/dog.svg';
 
 const About = () =>{
     return (
-        <div className = "containerAbout">
+        <div className = "container containerAbout">
             <div className = "containerIcons">
                 <img className = "containerIconStatic" alt="cat icon" srcSet={icon_cat}/>
                 <img className = "containerIconStatic" alt="dog icon" srcSet={icon_dog}/>

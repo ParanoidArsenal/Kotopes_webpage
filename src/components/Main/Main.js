@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = () =>{
     return (
-        <div className = "containerMain">
+        <div className = "container containerMain">
         </div> 
     );
 };

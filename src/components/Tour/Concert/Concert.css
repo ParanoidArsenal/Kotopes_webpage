@@ -1,0 +1,104 @@
+
+.concertContainer{
+    display:grid;
+    grid-template-columns: 2fr 2fr 0fr 5fr;
+    grid-template-rows: 1fr;
+    /* justify-items: center; */
+    justify-items: start;
+    width: 60%;
+    padding:10px 0px;
+    background-color: none;
+    transition: background-color 0.2s, transform 0.2s;
+    flex-wrap: wrap;
+    max-width: 350px;
+}
+
+.concertContainer *{
+    /* border:1px solid rgba(19, 18, 18, 0.644); */
+    width: 100%;
+    padding-left:5px;
+}
+
+.concertContainer:hover{
+        /* background-color: rgba(0, 0, 0, 0.219); */
+    background-color: rgba(228, 227, 171, 0.973);
+    transition: background-color 0.2s, transform 0.2s;
+    transform: scale(1.05);
+}
+
+
+
+
+.concertDate{
+    display: flex;
+    /* margin-right:10px; */
+    margin-left: 10px;
+    padding-right: 5px;
+    
+}
+
+.concertTime{
+    display: flex;
+    /* margin:0px 10px; */
+    border-left:1px solid #212529;;
+}
+
+.concertPlace{
+    display: flex;
+    align-items: flex-start;
+    border-left:1px solid #212529;;
+}
+
+
+
+/* --------------------------------- */
+@media screen and (min-width: 1200px) {
+    .concertContainer{
+        --cur-width:40%;
+        grid-template-columns: 2fr 2fr 0fr 6fr;
+        width: var(--cur-width);
+        padding-left: minmax(calc(var(--cur-width)/6), 35px);
+        padding-left: 35px;
+        /* background-color: blue; */
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .concertContainer{
+        grid-template-columns: 2fr 2fr 0fr 6fr;
+        width: 40%;
+        padding-left: 40px;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .concertContainer{
+        grid-template-columns: 2fr 2fr 0fr 6fr;
+        width: 60%;
+        padding-left: 40px;
+        /* background-color: green; */
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .concertContainer{
+        grid-template-columns: 2fr 2fr 0fr 6fr;
+        width: 70%;
+        padding-left: 35px;
+        /* background-color: yellow; */
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .concertContainer{
+        grid-template-columns: 2fr 2fr 0fr 5fr;
+        /* grid-template-rows: 1fr 1fr; */
+        width: 80%;
+        margin: 0px 5px;
+        padding-left: 35px;
+        /* background-color: purple; */
+    }
+    
+    
+}

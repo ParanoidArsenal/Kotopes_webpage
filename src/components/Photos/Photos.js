@@ -14,7 +14,7 @@ import {Thumbnail} from './Thumbnail/Thumbnail';
 import './Thumbnail/Thumbnail.css';
 const Photos = () =>{
     return (
-        <div className = "containerOuterPhotos">
+        <div className = "container containerOuterPhotos">
             <div className = "containerInnerPhotos">
             
                 {/* <ImageZoom>

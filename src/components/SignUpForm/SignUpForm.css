@@ -1,0 +1,61 @@
+form.signUpForm{
+    display: flex;
+    flex-direction: row;
+    /* width: 50%; */
+    justify-content: center;
+}
+
+/* form.signUpForm input{
+    width:60%;
+} */
+
+@media screen and (min-width: 1200px) {
+    form.signUpForm input{
+        width:60%;
+    }
+
+    form.signUpForm{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    form.signUpForm{
+        width:60%;
+    }
+
+    form.signUpForm input{
+        width:60%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    form.signUpForm{
+        width:80%;
+    }
+
+    form.signUpForm input{
+        width:60%;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    form.signUpForm{
+        width:90%;
+    }
+
+    form.signUpForm input{
+        width:70%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    form.signUpForm{
+        width:95%;
+    }
+
+    form.signUpForm input{
+        width:75%;
+    }
+}

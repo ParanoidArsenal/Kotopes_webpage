@@ -18,43 +18,23 @@
 
 .customNavBar{
     animation: fade-in 1s;
+    font-size: 1.4rem;
 }
 
-
-
-/* .customNavBar .active.link-1{
-    background-color: rgb(235, 42, 42) !important;
-} */
-
-/* .customNavBar .active.link-2{
-    background-color: rgb(235, 151, 42) !important;
+.navHeaderContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 100%;
+    flex-wrap: wrap;
 }
-
-.customNavBar .active.link-3{
-    background-color: rgb(235, 190, 42) !important;
-}
-
-.customNavBar .active.link-4{
-    background-color: rgb(42, 235, 52) !important;
-}
-
-.customNavBar .active.link-5{
-    background-color: rgb(42, 222, 235) !important;
-}
-
-.customNavBar .active.link-6{
-    background-color: rgb(42, 55, 235) !important;
-}
-
-.customNavBar .active.link-7{
-    background-color: rgb(229, 42, 235) !important;
-} */
 
 .logoOuterContainer{
     display:flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    margin: 5px;
+    margin: 0px 5px 5px;
     width: 100%;
 }
 
@@ -62,8 +42,16 @@
     display:block;
     max-width: 300px;
     min-width: 50px;
-    padding: 30px;
+    padding: 0px 30px 30px;
     transition: max-width 0.4s, transform 0.4s;
+}
+
+.shopping-cart-icon-container{
+    display:flex;
+    /* padding: 10px; */
+    /* justify-items: flex-end; */
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .logoInnerContainer:hover{
@@ -87,3 +75,31 @@
         opacity:1;
     }
 }
+
+.shopping-cart-icon{
+    display: flex;
+    position: relative;
+    max-width:70px;
+    /* margin: 0px 7px; */
+    /* margin:10px 50px 0px 0px; */
+    margin-right: 80px;
+    padding-top: 10px;
+    padding-left: 5%;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.4s, background-color 0.2s, border 0.2s;
+    border: 2px dashed rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+.shopping-cart-icon:hover{
+    /* transform:scale(1.1); */
+    background-color: rgba(228, 227, 171, 0.973);
+    border: 2px dashed rgb(22, 22, 22);
+    /* opacity: 0.7; */
+}
+
+.shopping-cart-icon img{
+    max-width:70%;
+}
+

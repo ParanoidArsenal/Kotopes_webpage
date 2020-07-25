@@ -111,9 +111,9 @@
 
 }
 
-/* .thumbnail:hover{
-    transform:scale(1.1);
-} */
+.thumbnail:hover{
+    transform:scale(1.05);
+}
 
 .zoom-hover:hover{
     transform:scale(1.1);

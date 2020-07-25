@@ -6,7 +6,6 @@ const Concert = ({date, time, place}) =>{
         <div className = "concertContainer">
             <div className = "concertDate"><span>{date}</span></div>
             <div className = "concertTime"><span>{time}</span></div>
-            <div></div>
             <div className = "concertPlace"><span>{place}</span></div>
         </div>
 

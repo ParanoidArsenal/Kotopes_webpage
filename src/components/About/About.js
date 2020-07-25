@@ -19,12 +19,12 @@ const About = () =>{
             <div className = "containerAboutOuterBodyText">
                 <div className = "containerAboutInnerBodyText">
                 <h3>About</h3>
-                <p>I'm Oliver and I like things, most of all music!
-                 This is my very minimal website where you can find a bunch of links.</p>
+                <p>Hello, we are band Kotopes from Saint-Petersburg, Russia! 
+                    We play sort of emo/math/indie rock music.</p>
 
-                   <p> I transcribe, share knowledge about, and cover music I love on youtube.</p>
+                   <p> On thiw webpage you can explore our music and other crappy content from us.</p>
 
-                   <p> Check out some cool pictures in my galleries!</p>
+                   <p> Hope you'll enjoy!</p>
                 </div>
             </div>
         </div> 

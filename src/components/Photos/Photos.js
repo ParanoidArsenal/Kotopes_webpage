@@ -16,12 +16,6 @@ const Photos = () =>{
     return (
         <div className = "container containerOuterPhotos">
             <div className = "containerInnerPhotos">
-            
-                {/* <ImageZoom>
-                    <img className = "thumbnail" alt="picture 1" src={pic_2} />
-                </ImageZoom> */}
-                {/* <ZoomImg src={pic_1}/> */}
-                {/* <ReactMediumImg src={pic_1} alt="picture 1" className = "thumbnail" /> */}
                 <Thumbnail src={pic_1} alt="picture 1" />
                 <Thumbnail src={pic_2} alt="picture 2" />
                 <Thumbnail src={pic_3} alt="picture 3" />
@@ -31,15 +25,6 @@ const Photos = () =>{
                 <Thumbnail src={pic_7} alt="picture 7" />
                 <Thumbnail src={pic_8} alt="picture 8" />
                 <Thumbnail src={pic_9} alt="picture 9" />
-                {/* <img className = "thumbnail" alt="picture 1" src={pic_1}/>
-                <img className = "thumbnail" alt="picture 2" src={pic_2}/>
-                <img className = "thumbnail" alt="picture 3" src={pic_3}/>
-                <img className = "thumbnail" alt="picture 4" src={pic_4}/>
-                <img className = "thumbnail" alt="picture 5" src={pic_5}/>
-                <img className = "thumbnail" alt="picture 6" src={pic_6}/>
-                <img className = "thumbnail" alt="picture 7" src={pic_7}/>
-                <img className = "thumbnail" alt="picture 8" src={pic_8}/>
-                <img className = "thumbnail" alt="picture 9" src={pic_9}/> */}
             </div>
         </div> 
     );

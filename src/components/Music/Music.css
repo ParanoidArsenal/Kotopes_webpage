@@ -1,6 +1,22 @@
 .containerMusic{
     display: flex;
+    animation: fade-in 0.5s;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.containerMusic iframe{
     animation: fade-in 1s;
 }
+
+.iframeLoading{
+    padding: 50px 0px;
+}
+
+/* .iframeContainerMusic{
+    display: flex;
+} */
+
 
 

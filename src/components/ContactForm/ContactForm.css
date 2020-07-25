@@ -27,21 +27,21 @@ input.messageInput{
 @media screen and (min-width: 1200px) {
     form.contactForm{
         width: 40%;
-        background-color: salmon;
+        /* background-color: salmon; */
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     form.contactForm{
         width:40%;
-        background-color: coral;
+        /* background-color: coral; */
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     form.contactForm{
         width:45%;
-        background-color: chocolate;
+        /* background-color: chocolate; */
     }
 
 }
@@ -49,14 +49,14 @@ input.messageInput{
 @media screen and (min-width: 576px) and (max-width: 767px) {
     form.contactForm{
         width:55%;
-        background-color: seagreen;
+        /* background-color: seagreen; */
     }
 }
 
 @media screen and (max-width: 575px) {
     form.contactForm{
         width:70%;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
 }

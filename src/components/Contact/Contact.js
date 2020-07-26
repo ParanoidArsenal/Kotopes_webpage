@@ -8,8 +8,9 @@ const Contact = () =>{
         <div className = "container containerContact">
         <p>
             <strong>Managment & booking - </strong> 
-            <u>
-                <a className = "text-info" href="mailto:murmans1996@gmail.com" target="_blank">murmans1996@gmail.com</a>
+            <u className = "text-info">
+                murmans1996@gmail.com
+                {/* <a className = "text-info" href="mailto:murmans1996@gmail.com" target="_blank">murmans1996@gmail.com</a> */}
             </u>
         </p>
         <p>

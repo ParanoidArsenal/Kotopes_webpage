@@ -1,9 +1,5 @@
 import React,{useState, useEffect} from 'react';
 import './Music.css';
-import song_1 from '../../music/1_bamsee.wav';
-import song_2 from '../../music/2_punchcakes.wav';
-import song_3 from '../../music/3_homework.wav';
-import song_4 from '../../music/4_luckyfive.wav';
 
 const Music = () =>{
     const [load, setLoad] = useState(true);
